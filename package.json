@@ -1,0 +1,13 @@
+{
+  "name": "hostnation-new",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "maraca-dev",
+    "build": "maraca-build"
+  },
+  "devDependencies": {
+    "maraca-app": "https://github.com/kalambo/maraca-app.git",
+    "typescript": "^3.1.6",
+    "webfontloader": "^1.6.28"
+  }
+}
