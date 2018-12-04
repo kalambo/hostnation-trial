@@ -7,7 +7,7 @@
   },
   "devDependencies": {
     "maraca-app": "https://github.com/kalambo/maraca-app.git",
-    "typescript": "^3.1.6",
+    "typescript": "^3.2.1",
     "webfontloader": "^1.6.28"
   }
 }

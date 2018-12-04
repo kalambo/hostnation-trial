@@ -5,7 +5,7 @@
       page: 1,
       [
         gap: 15,
-        (paging?, pagination? [total: #size(data?), size:=?, current: page?]),
+        (paging?, pagination? [total: data?.#size, size:=?, current: page?]),
         [
           : table,
           [
@@ -13,16 +13,17 @@
             fill: 0 0 85,
             pad: 10,
             round: 3,
-            "#",
+            \#,
             :: fields?,
           ],
           ::
             (
               data?,
               (
-                  #range(size?)
-                    [v=>> ((page? - 1) * size?) + v?]
-                    [v=>> data?.v?],
+                  size?
+                    .#range
+                    .[v=>> ((page? - 1) * size?) + v?]
+                    .[v=>> data?.v?],
                 )
                 [
                   k=> v=>
@@ -39,12 +40,12 @@
                         color: (hover?, 0 0 100, => 0 0 20),
                         ((page? - 1) * size?) + k?,
                       ],
-                      :: fields? [f=>> {v?.f?, "-"}],
+                      :: fields? [f=>> {v?.f?, \-}],
                     ],
                 ],
             ),
         ],
-        (paging?, pagination? [total: #size(data?), size:=?, current: page?]),
+        (paging?, pagination? [total: data?.#size, size:=?, current: page?]),
       ],
     },
 ]

@@ -1,5 +1,5 @@
 [
-  #title "Matching Dashboard | HostNation",
+  #title(Matching Dashboard \| HostNation),
   style: Lato 14,
   color: 0 0 20,
   pad: 50,
@@ -25,10 +25,10 @@
                               :: v?,
                               Created at:
                                 (#time(v?.Created at))
-                                  "("(
+                                  \((
                                     #duration(v?.Created at - @now),
-                                  )")",
-                              Address: (v?.Address)", "(v?.Postcode),
+                                  )\),
+                              Address: (v?.Address)\, (v?.Postcode),
                             ],
                           ),
                       ]
@@ -56,8 +56,8 @@
                 {
                   data:
                     #data
-                      Befrienders
-                      [
+                      .Befrienders
+                      .[
                         v=>>
                           (
                             !v?.Match,
@@ -67,17 +67,17 @@
                               :: v?,
                               Created at:
                                 (#time(v?.Created at))
-                                  "("(
+                                  \((
                                     #duration(v?.Created at - @now),
-                                  )")",
-                              Address: (v?.Address)", "(v?.Postcode),
+                                  )\),
+                              Address: (v?.Address)\, (v?.Postcode),
                               Distance: refugee?.Map address - v?.Map address,
                             ],
                           ),
                       ]
-                      [v=>> v?.Distance: v?]
-                      [v=>> :: [[:: v?, Distance: (#round(v?.Distance)) km]]]
-                      [k=> v=> :: (k? <= 10, [v?])],
+                      .[v=>> v?.Distance: v?]
+                      .[v=>> :: [[:: v?, Distance: (#round(v?.Distance)) km]]]
+                      .[k=> v=> :: (k? <= 10, [v?])],
                   [
                     gap: 40,
                     header?

@@ -17,11 +17,12 @@
             round: 3,
             click: current?,
             value: (active?, current? - 1, => 1),
-            "‹",
+            \‹,
           ],
         },
         ::
-          #range(max?)
+          max?
+            .#range
             .[
               v=>>
                 [
@@ -46,7 +47,7 @@
             round: 3,
             click: current?,
             value: (active?, current? + 1, => max?),
-            "›",
+            \›,
           ],
         },
       ],

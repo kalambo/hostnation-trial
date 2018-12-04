@@ -13,7 +13,7 @@
             fill: 0 0 100,
             pad: 0 0 5 5,
             width: left,
-            "« Back",
+            \« Back,
           ],
         ),
         [style: 40 bold, title?],
