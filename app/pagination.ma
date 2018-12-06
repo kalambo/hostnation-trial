@@ -17,7 +17,7 @@
             round: 3,
             click: current?,
             value: (active?, current? - 1, => 1),
-            \‹,
+            '‹,
           ],
         },
         ::
@@ -47,7 +47,7 @@
             round: 3,
             click: current?,
             value: (active?, current? + 1, => max?),
-            \›,
+            '›,
           ],
         },
       ],

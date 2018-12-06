@@ -1,5 +1,5 @@
 [
-  #title(Matching Dashboard \| HostNation),
+  #title(Matching Dashboard '| HostNation),
   style: Lato 14,
   color: 0 0 20,
   pad: 50,
@@ -25,10 +25,8 @@
                               :: v?,
                               Created at:
                                 (#time(v?.Created at))
-                                  \((
-                                    #duration(v?.Created at - @now),
-                                  )\),
-                              Address: (v?.Address)\, (v?.Postcode),
+                                  '({#duration(v?.Created at - @now)}'),
+                              Address: {v?.Address}', {v?.Postcode},
                             ],
                           ),
                       ]
@@ -67,10 +65,8 @@
                               :: v?,
                               Created at:
                                 (#time(v?.Created at))
-                                  \((
-                                    #duration(v?.Created at - @now),
-                                  )\),
-                              Address: (v?.Address)\, (v?.Postcode),
+                                  '({#duration(v?.Created at - @now)}'),
+                              Address: {v?.Address}', {v?.Postcode},
                               Distance: refugee?.Map address - v?.Map address,
                             ],
                           ),
