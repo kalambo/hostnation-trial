@@ -25,18 +25,16 @@ const dataEndpoint =
 // light: female, dark: male
 
 // RED (unready)
-// 12 85 53
-// 12 64 37
+// 10 100 40/60
 
 // YELLOW (refugee)
-// 27 90 80/90
+// 25 100 75/90
 
 // GREEN (matched)
-// 38 88 74
-// 38 71 55
+// 40 100 55/70
 
 // BLUE (ready)
-// 73 50 70/80
+// 70 100 50/70
 
 // PURPLE (ready, secondary)
 // 84 62 57
